@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Certification
+vid: certification
+description: 'Ratings awarded by the BBFC.'
+hierarchy: 0
+weight: 0

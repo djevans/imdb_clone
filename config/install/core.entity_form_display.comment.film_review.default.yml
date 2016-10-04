@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.film_review
+    - field.field.comment.film_review.comment_body
+    - field.field.comment.film_review.field_score
+  module:
+    - text
+id: comment.film_review.default
+targetEntityType: comment
+bundle: film_review
+mode: default
+content:
+  author:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_score:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  subject:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

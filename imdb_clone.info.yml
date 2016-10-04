@@ -1,0 +1,19 @@
+name: 'IMDB Clone'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - comment
+  - datetime
+  - field
+  - flag
+  - image
+  - menu_ui
+  - node
+  - options
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0

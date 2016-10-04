@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: film_review
+label: 'Film Review'
+target_entity_type_id: node
+description: 'A review of a film.'

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: offensive
+label: Offensive
+bundles:
+  - film_review
+entity_type: comment
+enabled: true
+global: false
+weight: 0
+flag_short: 'Flag this item as offensive'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:comment'
+link_type: reload
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  access_author: ''
+linkTypeConfig: {  }

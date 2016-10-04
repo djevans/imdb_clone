@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.film_review
+    - field.storage.comment.field_score
+  module:
+    - options
+id: comment.film_review.field_score
+field_name: field_score
+entity_type: comment
+bundle: film_review
+label: Score
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

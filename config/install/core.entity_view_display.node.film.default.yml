@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.film.body
+    - field.field.node.film.field_cast
+    - field.field.node.film.field_certificate
+    - field.field.node.film.field_poster
+    - field.field.node.film.field_release_date
+    - field.field.node.film.field_reviews
+    - node.type.film
+  module:
+    - comment
+    - datetime
+    - image
+    - text
+    - user
+id: node.film.default
+targetEntityType: node
+bundle: film
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_cast:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_certificate:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_poster:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_release_date:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    type: datetime_default
+  field_reviews:
+    weight: 6
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
