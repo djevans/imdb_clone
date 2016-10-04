@@ -6,6 +6,7 @@ dependencies:
   - comment
   - datetime
   - field
+  - file
   - flag
   - image
   - menu_ui
